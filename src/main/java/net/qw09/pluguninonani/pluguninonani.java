@@ -2,6 +2,7 @@ package net.qw09.pluguninonani;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.qw09.pluguninonani.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,8 @@ public class pluguninonani implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItems.RegisterModItems();
 
 		LOGGER.info("yeah i get it");
 	}
