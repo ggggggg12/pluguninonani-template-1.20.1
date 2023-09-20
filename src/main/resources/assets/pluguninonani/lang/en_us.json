@@ -1,3 +1,8 @@
 {
-  "item.pluguninonani.darkness": "§dDarkness"
+  "item.pluguninonani.darkness": "§dDarkness",
+  "block.pluguninonani.darkness_ore": "§dDarkness ore",
+  "item.pluguninonani.darkness_sword": "§dmood killer",
+  "item.pluguninonani.darkness_pickaxe": "§dmood miner",
+  "item.pluguninonani.darkness_axe": "§dmood stripper",
+  "item.pluguninonani.darkness_shovel": "§dmood shovel"
 }

@@ -13,7 +13,7 @@ public class pluguninonani implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModBlocks.registerModlocks();
+		ModBlocks.registerModBlocks();
 
 		ModItems.RegisterModItems();
 

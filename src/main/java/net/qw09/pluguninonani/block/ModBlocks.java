@@ -8,18 +8,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.qw09.pluguninonani.item.ModItems;
 import net.qw09.pluguninonani.pluguninonani;
 
 public class ModBlocks {
 
     public static final Block DARKNESS_ORE = registerBlock("darkness_ore",
-            new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     private static void addItemsToIngredientTab(FabricItemGroupEntries entries){
         entries.add(DARKNESS_ORE);
@@ -38,7 +37,7 @@ public class ModBlocks {
 
 
 
-    public static void registerModlocks(){
+    public static void registerModBlocks(){
         pluguninonani.LOGGER.info("registring mod blocks for" + pluguninonani.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addItemsToIngredientTab);
     }
