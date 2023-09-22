@@ -23,7 +23,7 @@ public class ModDimensions {
 
         CustomPortalBuilder.beginPortal()
                 .frameBlock(Blocks.NETHERITE_BLOCK)
-                .destDimID(new Identifier("qw09dim")).tintColor(0,0,255).lightWithItem(ModItems.DARKNESS).registerPortal();
+                .destDimID(QW09DIM_DIMENSION_KEY.getValue()).tintColor(0,0,255).lightWithItem(ModItems.DARKNESS).registerPortal();
 
     }
 
