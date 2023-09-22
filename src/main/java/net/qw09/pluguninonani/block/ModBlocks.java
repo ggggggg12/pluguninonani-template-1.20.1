@@ -11,14 +11,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.qw09.pluguninonani.pluguninonani;
 
 public class ModBlocks {
 
     public static final Block DARKNESS_ORE = registerBlock("darkness_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(1.0f, 1.0f)));
+    public static final Block QUICK_ONE_CROP = Registry.register(Registries.BLOCK, new Identifier(pluguninonani.MOD_ID, "quick_one_crop"),
+            new QuickOneCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     private static void addItemsToIngredientTab(FabricItemGroupEntries entries){
         entries.add(DARKNESS_ORE);

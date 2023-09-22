@@ -5,7 +5,10 @@
       "item": "minecraft:dirt"
     },
     {
-      "item": "minecraft:stick"
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
     },
     {
       "item": "minecraft:stick"
@@ -14,7 +17,7 @@
       "item": "minecraft:stick"
     },
     {
-      "item": "minecraft:stick"
+      "item": "minecraft:dirt"
     },
     {
       "item": "minecraft:oak_log"
@@ -22,6 +25,6 @@
   ],
   "result": {
     "count": 9,
-    "item": "minecraft:netherite_ingot"
+    "item": "pluguninonani:darkness"
   }
 }

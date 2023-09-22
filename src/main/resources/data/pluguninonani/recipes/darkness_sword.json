@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "pluguninonani:darkness"
+    },
+    {
+      "item": "pluguninonani:darkness"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "pluguninonani:darkness_sword"
+  }
+}

@@ -8,7 +8,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    DARKNESS(99999, 90f, 90f, 5, 90,
+    DARKNESS(99999, 900f, 90f, 5, 90,
             () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
 
     private int ItemDurability;
@@ -29,21 +29,25 @@ public enum ModToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
+
         return this.ItemDurability;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
+
         return this.ItemMiningSpeed;
     }
 
     @Override
     public float getAttackDamage() {
+
         return this.ItemAttackDamage;
     }
 
     @Override
     public int getMiningLevel() {
+
         return this.ItemMiningLevel;
     }
 
@@ -54,6 +58,7 @@ public enum ModToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
+
         return this.repairIngredient.get();
     }
 }
